@@ -8,6 +8,7 @@ const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
 const KEY = process.env.REACT_APP_OMDB_KEY;
+console.log("API KEY", KEY);
 
 export default function App() {
   const [query, setQuery] = useState("");
