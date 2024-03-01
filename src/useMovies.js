@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const KEY = "24c094de";
+const KEY = process.env.REACT_APP_OMDB_KEY;
 
 // THIS IS A CUSTOM HOOK!
 export function useMovies(query) {
